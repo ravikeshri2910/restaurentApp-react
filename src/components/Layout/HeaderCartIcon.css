@@ -1,0 +1,27 @@
+.cartButton{
+    width: 12rem;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+
+}
+
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(100, 100, 165);
+}
+
+.your-cart{
+    margin-top: 1.25rem;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.number{
+    margin-top: 1rem;
+    background-color: rgb(255, 128, 0);
+    padding: 0.25rem 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
