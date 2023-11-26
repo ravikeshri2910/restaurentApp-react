@@ -1,7 +1,8 @@
 .cartButton{
     width: 12rem;
     border-radius: 10px;
-    background-color: white;
+    border: none;
+    background-color: rgb(255, 255, 255);
     display: flex;
 
 }
@@ -9,7 +10,7 @@
 
 button:hover{
     cursor: pointer;
-    border: 2px solid rgb(100, 100, 165);
+    border: 2px solid rgb(2, 2, 141);
 }
 
 .your-cart{
@@ -25,3 +26,4 @@ button:hover{
     border-radius: 25px;
     font-weight: bold;
 }
+

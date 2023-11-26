@@ -3,17 +3,18 @@ import React from "react"
 import './HeaderCartIcon.css'
 
 import CartIcon from '../../Images/icons8-cart (1).gif'
+// import CartIcon from '../../Images/icons8-cart (1).gif'
 
 const HeaderCartIcon = props => {
     return (
         <button className="cartButton">
-            <div>
+            <span className="cartIcon">
                 <img src={CartIcon} alt="Cart"/>
-            </div>
-            <div className="your-cart">Your Cart</div>
-            <div className="number">
+            </span>
+            <span className="your-cart">Your Cart</span>
+            <span className="number">
                 3
-            </div>
+            </span>
         </button>
     )
 }
