@@ -1,6 +1,8 @@
 import React from "react"
 import './AvailableMeals.css'
 
+import MealForm from "./MealForm"
+
 const Dummy_Meals = [
     {
         id: 'm1',
@@ -31,19 +33,31 @@ const AvailableMeals = (props) => {
 
     const meals = Dummy_Meals.map((meal) => {
         return (
-
-            <ul className="list" key={meal.id}>
-                <li><b>{meal.name}</b></li>
-                <li><i>{meal.description}</i></li>
-                <li><b>${meal.price}</b></li>
-                <hr/>
-            </ul>
+            <>
+            <div className="listContainer">
+                <div>
+                    <ul className="list" key={meal.id}>
+                        <li><b>{meal.name}</b></li>
+                        <li><i>{meal.description}</i></li>
+                        <li><b>${meal.price}</b></li>
+                       
+                    </ul>
+                </div>
+                <div className="mealForm">
+                    <MealForm />
+                </div>
+               
+            </div><hr/>
+            </>
         )
     })
 
-    return(
+    return (
         <div className="mealsList">
-          {meals}
+
+            {meals}
+           
+
         </div>
     )
 }
