@@ -1,0 +1,47 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+
+.cartContainer{
+    position: relative;
+    top: 30vh;
+    left: 25%;
+    border-radius: 25px;
+    background-color:aliceblue;
+    /* position: absolute; */
+    /* margin-left: 25%; */
+    width: 50%;
+    align-items: center;
+}
+
+.cartContainer p{
+    padding: 0.25rem 1rem;
+}
+
+.totalPrice{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+}
+
+.cartButtons{
+    margin-left: 60%;
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+
+.cartButtons button:nth-child(1){
+    /* border: 2px solid red; */
+    background-color: antiquewhite;
+    color: black;
+    justify-content: first baseline;
+}
