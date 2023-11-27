@@ -13,7 +13,7 @@ const Cart = props => {
         </div>
         <div >
             <div className="cartButtons">
-            <button>Close</button>
+            <button onClick = {props.onClickClose}>Close</button>
             <button>Open</button>
             </div>
         </div>

@@ -12,7 +12,7 @@ const Header = props =>{
                 <h1>
                     ReactMeals
                 </h1>
-                <HeaderCartIcon/>
+                <HeaderCartIcon  onClickCart={props.onCartOpen}/>
             </header>
             <div className="imageBox">
                 <img src={headerImage} alt="Disses "/>
