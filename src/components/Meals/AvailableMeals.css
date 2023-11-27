@@ -1,0 +1,18 @@
+.mealsList{
+    position: absolute;
+    background-color: aliceblue;
+    top: 28rem;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 20px;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0 1.5rem 0 1.5rem;
+  
+}
+
+.list li:nth-child(3){
+    color: brown;
+}

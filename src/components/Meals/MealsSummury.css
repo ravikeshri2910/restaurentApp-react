@@ -1,11 +1,9 @@
 .summery-container {
-
+    /* for image overflow: ; */
     position: absolute;
     top: 12rem;
     left: 0;
     background-color: rgba(67, 59, 59, 1);
-
-
 
     width: 60%;
     height: 15rem;
@@ -14,5 +12,5 @@
     margin-left: 20%;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    padding: 1rem 1rem;
+    padding: 1rem ;
 }
