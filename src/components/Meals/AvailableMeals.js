@@ -44,7 +44,7 @@ const AvailableMeals = (props) => {
                     </ul>
                 </div>
                 <div className="mealForm">
-                    <MealForm />
+                    <MealForm item = {meal}/>
                 </div>
                
             </div><hr/>

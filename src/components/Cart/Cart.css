@@ -11,14 +11,24 @@
 
 .cartContainer{
     position: relative;
+    animation: moveCart 0.5s forwards;
     top: 30vh;
     left: 25%;
     border-radius: 25px;
     background-color:aliceblue;
-    /* position: absolute; */
-    /* margin-left: 25%; */
     width: 50%;
     align-items: center;
+}
+
+@keyframes moveCart {
+    from {
+        /* Starting position */
+        transform: translateY(0);
+    }
+    to {
+        /* Ending position */
+        transform: translateY(25%);
+    }
 }
 
 .cartContainer p{

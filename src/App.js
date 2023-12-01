@@ -4,6 +4,7 @@ import React,{useState} from "react";
 import Header from "./components/Layout/Header";
 import MealsSummury from "./components/Meals/MealsSummury";
 import AvailableMeals from "./components/Meals/AvailableMeals";
+import CartProvider from "./components/Store/CartProvider";
 
 import Model from "./components/UI/Model";
 function App() {
@@ -21,14 +22,14 @@ function App() {
   }
 
   return (
-    <React.Fragment>
+    <CartProvider>
       <Header onCartOpen = {openCartHandler}/>
        <MealsSummury/>
       <main>
        <AvailableMeals/>
       </main>
      { cartOpen && <Model onCartClose = {closeCartHandler}/> }
-    </React.Fragment>
+    </CartProvider>
   );
 }
 

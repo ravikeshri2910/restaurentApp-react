@@ -6,6 +6,15 @@ label{
     font-weight: bold;
 }
 
+input{
+    width: 2rem;
+    margin-left: .5rem;
+    border-radius: 5px;
+    padding-left: 5%;
+    font-weight: bold;
+   
+}
+
 button{
     color: white;
     background-color: brown;
@@ -15,8 +24,3 @@ button{
     margin: .5rem;
 }
 
-input{
-    width: 2rem;
-    margin-left: .5rem;
-    border-radius: 5px;
-}
