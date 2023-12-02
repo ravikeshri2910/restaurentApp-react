@@ -1,5 +1,6 @@
 .backdrop{
     position: fixed;
+    overflow: scroll; /* Show scrollbars */
     top: 0;
     left: 0;
     width: 100%;
@@ -10,9 +11,10 @@
 
 
 .cartContainer{
+    cursor: pointer;
     position: relative;
     animation: moveCart 0.5s forwards;
-    top: 30vh;
+    top: 10vh;
     left: 25%;
     border-radius: 25px;
     background-color:aliceblue;
@@ -20,6 +22,9 @@
     align-items: center;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
 @keyframes moveCart {
     from {
         /* Starting position */

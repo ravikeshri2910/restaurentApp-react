@@ -28,6 +28,18 @@ const Dummy_Meals = [
         description: 'Fresh vegies',
         price: 70
     },
+    {
+        id: 'm5',
+        name: 'Chiken',
+        description: 'Fresh vegies',
+        price: 70
+    },
+    {
+        id: 'm6',
+        name: 'Mutton',
+        description: 'Fresh vegies',
+        price: 70
+    },
 ]
 const AvailableMeals = (props) => {
 
@@ -39,7 +51,7 @@ const AvailableMeals = (props) => {
                     <ul className="list" key={meal.id}>
                         <li><b>{meal.name}</b></li>
                         <li><i>{meal.description}</i></li>
-                        <li><b>${meal.price}</b></li>
+                        <li><b>Rs-{meal.price}</b></li>
                        
                     </ul>
                 </div>

@@ -1,0 +1,63 @@
+.cartDeleteutton{
+    display: flex;
+}
+
+/* .cartDeleteutton div{
+    border: 2px solid brown;
+    margin-left: 10%;
+    width: 10px; 
+    padding-left: 12%;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 10px;
+
+} */
+.deleteQuantity{
+    border: 2px solid brown;
+    background-color: antiquewhite;
+    color: black;
+    margin-left: 8%;
+    width: 25px; 
+    padding: 0.25rem 1rem;
+    padding-left: 10%;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.deleteQuantity:hover{
+    background-color: brown;
+    color: antiquewhite;
+}
+
+.addQuantity{
+    border: 2px solid brown;
+    width: 25px; 
+    padding: 0.25rem 1rem;
+    padding-left: 10%;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.addQuantity:hover{
+    background-color: antiquewhite;
+    border: 2px solid brown;
+    color: black;
+}
+.removeItem{
+    border: 2px solid brown;
+    /* width: 25px;  */
+    padding: 0.25rem 1rem;
+    padding-left: 10%;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.removeItem:hover{
+    background-color: antiquewhite;
+    border: 2px solid brown;
+    color: black;
+}
+

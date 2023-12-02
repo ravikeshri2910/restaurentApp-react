@@ -7,7 +7,7 @@ import './MealForm.css'
 const MealForm = (props) => {
     const cartContext = useContext(CartContext);
 
-    const [quantityContainer , setQuantityContainer] = useState(0)
+    const [quantityContainer , setQuantityContainer] = useState(1)
 
     const quantityHandler = (event) =>{
         event.preventDefault()
@@ -26,6 +26,8 @@ const MealForm = (props) => {
          //const quantity = +document.getElementById('inputValue').value
 
         cartContext.addItem({ ...props.item, quantity: quantityContainer }); // Assuming the item to be added
+
+        alert(`${quantityContainer} - Meal is added`)
         //document.getElementById('inputValue').value = ''
 
         //console.log('here', props.item)
@@ -36,7 +38,6 @@ const MealForm = (props) => {
             <div>
                 <label>Amount</label>
                 <input id="inputValue" value={quantityContainer} onChange={quantityHandler}></input>
-                {/* <Input input={{ id: "inputValue", type: 'number', min: '1', max: '5', step: '1', defaultValue: '1' , value : {quantityContainer}}} /> */}
             </div>
             <button type="submit" onClick={formHandler}>
                 +Add
